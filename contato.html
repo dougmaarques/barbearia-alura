@@ -3,15 +3,18 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Produtos - Barbearia Alura</title>
+        <title>Contato - Barbearia Alura</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+     </head>
    
     <body>
         <header>
             <div class="caixa">
-                <h1> <img src="logo.png" alt="Logo da Barbearia Alura" > </h1>
+                <h1> <img src="imagens/logo.png" alt="Logo da Barbearia Alura" > </h1>
                     <nav>
                         <ul> 
                             <li><a href="index.html">Home</a></li>
@@ -21,7 +24,8 @@
                     </nav>
             </div>
         </header>
-        <main>
+        <main class="main_contato">
+            <p>Entre em contato conosco!</p>
             <form>
                 <label for="nomesobrenome">Nome e Sobrenome</label>
                 <input type="text" id="nomesobrenome" class="input-padrao" required > 
@@ -45,7 +49,7 @@
                  </fieldset>
 
                  <fieldset>
-                    <legend>Qual horário prefere ser atendido?</legend>
+                    <legend class="preferencia_horario">Qual horário prefere ser atendido?</legend>
                         <select>
                             <option>Manhã</option>
                             <option>Tarde</option>
@@ -59,7 +63,8 @@
             </form>
 
             <table>
-                <thead> </thead>
+                <caption> Horários de Atendimento </caption>
+                <thead> 
                     <tr>
                         <th>Dia</th>
                         <th>Horário</th>
@@ -68,18 +73,38 @@
                 
             <tbody>
                     <tr>
-                        <td>Segunda</td>
+                        <td>Segunda-feira</td>
                         <td>08:00 - 20:00</td>
                     </tr>
 
                     <tr>
-                        <td>Quarta</td>
+                        <td>Terça-feira</td>
                         <td>08:00 - 20:00</td>
                     </tr>
 
                     <tr>
-                        <td>Sexta</td>
+                        <td>Quarta-feira</td>
                         <td>08:00 - 20:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Quinta-feira</td>
+                        <td>08:00 - 20:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>08:00 - 21:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sábado</td>
+                        <td>08:00 - 18:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Fechado</td>
                     </tr>
             </tbody>
             </table>   
@@ -87,7 +112,7 @@
 
 
         <footer>
-            <img src="logo-branco.png" alt="Logo da Barbearia Alura">
+            <img src="imagens/logo-branco.png" alt="Logo da Barbearia Alura">
             <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
         </footer>
     </body>
