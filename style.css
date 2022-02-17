@@ -12,7 +12,7 @@ body{
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    font-family:'Open Sans Condensed', sans-serif; ;
+    font-family:'Open Sans Condensed', sans-serif;
 }
 header {
     background: #bbbbbb;
@@ -44,10 +44,24 @@ nav a:hover{
     color: red;
     text-decoration: underline;
 }
-.produtos{
+
+/*
+página de produtos
+*/
+
+
+.produtos {
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 50px;
+    font-family:'Open Sans Condensed', sans-serif;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 .produtos li{
     display: inline-block;
@@ -58,13 +72,16 @@ nav a:hover{
     padding: 30px 20px;
     box-sizing: border-box;
     border: 3px solid #000000;
-    border-radius: 10px;    
+    border-radius: 10px; 
+    background: white; 
+      
 }
 .produtos li:hover{
-    border-color: #c78c19;
+    border-color: red;
+    transform: scale(1.1);
 }
 .produtos li:active{
-    border-color: #088c19;
+    border-color: green;
 }
 .produtos li:hover h2{
     font-size: 34px;
@@ -79,8 +96,12 @@ nav a:hover{
 .produto-preco{
 font-size: 22px;
 font-weight: bold;
-margin: 10px 0 0;
+margin: 20px 0px 0px 0px;
 }
+
+/*
+ página de contato
+ */
 
 form{
     margin: 30px 0;
@@ -150,16 +171,18 @@ tbody {
 /* css da página inicial */
 /* PAGINA INICIAL */
 
+
 .banner{
     width: 100%;
 }
 
 .titulo-principal{
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     margin: 0 0 1em;
     clear: left;
     font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
 
 }
 
@@ -237,7 +260,7 @@ tbody {
 
 .imagem-beneficios{
     width: 40%;
-    margin: 0 0 0 100px;
+    margin: 0 0 20px 100px;
     opacity: 90%;
     transition: 1s;
     box-shadow: 5px 5px 25px 10px black ;
@@ -250,7 +273,12 @@ tbody {
 
 .video{
     width: 560px;
-    margin: 2em auto;
+    margin: auto;
+    
+}
+
+main  {
+    background: #888888;
 }
 
 @media screen and (max-width: 480px) {
@@ -276,7 +304,8 @@ footer{
     background: url("imagens/bg.jpg");
     padding: 10px 0;
 }
-.copyright{
+
+footer p{
     color:#ffffff;
     font-size: 13px;
     margin: 10px;
